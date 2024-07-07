@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cashier App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f74ccdee01.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer type="module"></script>
+  </head>
+  <body>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Create Order -->
+    <div class="create-order-container"></div>
+
+    <h1>Cashier App</h1>
+
+    <div class="container">
+      <div class="orders-pop-up-box">
+        <div class="close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="item-header">
+          <h2>Orders &hyphen; <span class="table-id">T1</span></h2>
+          <button class="btn">Create Order</button>
+        </div>
+
+        <div class="order-container">
+          <div class="order">
+            <div class="order-header">
+              <p class="order-id">ORD1253</p>
+              <p class="order-staff">Alice</p>
+              <p class="order-timestap">2024-06-12 19:15:00</p>
+              <p class="order-status">Status: <span>Pending</span></p>
+            </div>
+
+            <div class="items">
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item"></div>
+            </div>
+          </div>
+
+          <div class="order">
+            <div class="order-header">
+              <p class="order-id">ORD1253</p>
+              <p class="order-staff">Alice</p>
+              <p class="order-timestap">2024-06-12 19:15:00</p>
+              <p class="order-status">Status: <span>Pending</span></p>
+            </div>
+
+            <div class="items">
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="order">
+            <div class="order-header">
+              <p class="order-id">ORD1253</p>
+              <p class="order-staff">Alice</p>
+              <p class="order-timestap">2024-06-12 19:15:00</p>
+              <p class="order-status">Status: <span>Pending</span></p>
+            </div>
+
+            <div class="items">
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="order">
+            <div class="order-header">
+              <p class="order-id">ORD1253</p>
+              <p class="order-staff">Alice</p>
+              <p class="order-timestap">2024-06-12 19:15:00</p>
+              <p class="order-status">Status: <span>Pending</span></p>
+            </div>
+
+            <div class="items">
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="order">
+            <div class="order-header">
+              <p class="order-id">ORD1253</p>
+              <p class="order-staff">Alice</p>
+              <p class="order-timestap">2024-06-12 19:15:00</p>
+              <p class="order-status">Status: <span>Pending</span></p>
+            </div>
+
+            <div class="items">
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="order">
+            <div class="order-header">
+              <p class="order-id">ORD1253</p>
+              <p class="order-staff">Alice</p>
+              <p class="order-timestap">2024-06-12 19:15:00</p>
+              <p class="order-status">Status: <span>Pending</span></p>
+            </div>
+
+            <div class="items">
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="order">
+            <div class="order-header">
+              <p class="order-id">ORD1253</p>
+              <p class="order-staff">Alice</p>
+              <p class="order-timestap">2024-06-12 19:15:00</p>
+              <p class="order-status">Status: <span>Pending</span></p>
+            </div>
+
+            <div class="items">
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="order">
+            <div class="order-header">
+              <p class="order-id">ORD1253</p>
+              <p class="order-staff">Alice</p>
+              <p class="order-timestap">2024-06-12 19:15:00</p>
+              <p class="order-status">Status: <span>Pending</span></p>
+            </div>
+
+            <div class="items">
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="order">
+            <div class="order-header">
+              <p class="order-id">ORD1253</p>
+              <p class="order-staff">Alice</p>
+              <p class="order-timestap">2024-06-12 19:15:00</p>
+              <p class="order-status">Status: <span>Pending</span></p>
+            </div>
+
+            <div class="items">
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="order">
+            <div class="order-header">
+              <p class="order-id">ORD1253</p>
+              <p class="order-staff">Alice</p>
+              <p class="order-timestap">2024-06-12 19:15:00</p>
+              <p class="order-status">Status: <span>Pending</span></p>
+            </div>
+
+            <div class="items">
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="order">
+            <div class="order-header">
+              <p class="order-id">ORD1253</p>
+              <p class="order-staff">Alice</p>
+              <p class="order-timestap">2024-06-12 19:15:00</p>
+              <p class="order-status">Status: <span>Pending</span></p>
+            </div>
+
+            <div class="items">
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+              <div class="item">
+                <p class="item-name">
+                  <span class="qty">2</span>x
+                  <span class="menu-item">M001</span>
+                </p>
+                <p class="item-special">
+                  Special Instructions: <span class="special">No onion</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------------------------------------->
+      <!-- Table -->
+      <!--------------------------------------->
+
+      <div class="table">
+        <div class="table-title">T1</div>
+        <div class="table-content">
+          <div class="table-content-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="table-content-text">Near window</div>
+        </div>
+
+        <div class="table-content-footer">
+          <div class="table-content-footer-icon">
+            <i class="fa-solid fa-person"></i>
+            4
+          </div>
+        </div>
+      </div>
+      <div class="table">
+        <div class="table-title">T2</div>
+        <div class="table-content">
+          <div class="table-content-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="table-content-text">Patio</div>
+        </div>
+
+        <div class="table-content-footer">
+          <div class="table-content-footer-icon">
+            <i class="fa-solid fa-person"></i>
+            2
+          </div>
+        </div>
+      </div>
+      <div class="table">
+        <div class="table-title">T3</div>
+        <div class="table-content">
+          <div class="table-content-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="table-content-text">Private booth</div>
+        </div>
+
+        <div class="table-content-footer">
+          <div class="table-content-footer-icon">
+            <i class="fa-solid fa-person"></i>
+            6
+          </div>
+        </div>
+      </div>
+      <div class="table">
+        <div class="table-title">T4</div>
+        <div class="table-content">
+          <div class="table-content-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="table-content-text">Center of the restaurant</div>
+        </div>
+
+        <div class="table-content-footer">
+          <div class="table-content-footer-icon">
+            <i class="fa-solid fa-person"></i>
+            8
+          </div>
+        </div>
+      </div>
+      <div class="table">
+        <div class="table-title">T5</div>
+        <div class="table-content">
+          <div class="table-content-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="table-content-text">Bar counter</div>
+        </div>
+
+        <div class="table-content-footer">
+          <div class="table-content-footer-icon">
+            <i class="fa-solid fa-person"></i>
+            2
+          </div>
+        </div>
+      </div>
+      <div class="table">
+        <div class="table-title">T6</div>
+        <div class="table-content">
+          <div class="table-content-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="table-content-text">Outdoor</div>
+        </div>
+
+        <div class="table-content-footer">
+          <div class="table-content-footer-icon">
+            <i class="fa-solid fa-person"></i>
+            4
+          </div>
+        </div>
+      </div>
+      <div class="table">
+        <div class="table-title">T7</div>
+        <div class="table-content">
+          <div class="table-content-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="table-content-text">VIP section</div>
+        </div>
+
+        <div class="table-content-footer">
+          <div class="table-content-footer-icon">
+            <i class="fa-solid fa-person"></i>
+            10
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
